@@ -2,14 +2,19 @@
 import { Button } from "./ui/button";
 import { ArrowRight, Sparkles, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-illustration.jpg";
+import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 const HeroSection = () => {
+  const { scrollToElement } = useSmoothScroll();
+
   return (
     <section id="home" className="min-h-screen bg-gradient-hero flex items-center justify-center pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-8 animate-fade-in-up">
+          <div className="space-y-8 animate-fade-in-up"
+            style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
+          >
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-coral">
                 <Sparkles className="h-5 w-5 animate-bounce-gentle" />
@@ -44,8 +49,8 @@ const HeroSection = () => {
               <Button 
                 variant="coral" 
                 size="xl"
-                className="group"
-                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                className="group hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                onClick={() => scrollToElement('projects', 1200, -80)}
               >
                 View My Work
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -62,12 +67,14 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative animate-scale-in">
-            <div className="relative z-10">
+          <div className="relative animate-scale-in" 
+            style={{ animationDelay: '0.8s', animationFillMode: 'both' }}
+          >
+            <div className="relative z-10 group cursor-pointer">
               <img
                 src={heroImage}
                 alt="Content strategist and copywriter"
-                className="w-full h-auto rounded-3xl shadow-card animate-float"
+                className="w-full h-auto rounded-3xl shadow-card animate-float hover:shadow-xl transition-all duration-500 group-hover:scale-105"
               />
             </div>
             

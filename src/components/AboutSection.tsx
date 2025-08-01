@@ -2,8 +2,13 @@
 import { Card, CardContent } from "./ui/card";
 import { Heart, Lightbulb, Zap, Users, TrendingUp, Target, Award, BookOpen, Download, ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
+import { useScrollAnimation, useStaggeredAnimation } from "@/hooks/use-scroll-animation";
 
 const AboutSection = () => {
+  const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
+  const { containerRef: valuesRef, visibleItems: valuesVisible } = useStaggeredAnimation(4, 150);
+  const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation({ threshold: 0.3 });
+
   const values = [
     {
       icon: Target,

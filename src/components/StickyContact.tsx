@@ -58,7 +58,7 @@ const StickyContact = () => {
         className={`w-14 h-14 rounded-full shadow-card transition-all duration-300 ${
           isOpen 
             ? "bg-gray-500 hover:bg-gray-600 rotate-180" 
-            : "bg-coral hover:bg-coral/90 animate-pulse"
+            : "bg-coral hover:bg-coral/90"
         }`}
         size="icon"
       >
@@ -69,10 +69,6 @@ const StickyContact = () => {
         )}
       </Button>
 
-      {/* Floating Animation */}
-      {!isOpen && (
-        <div className="absolute inset-0 rounded-full border-2 border-coral/30 animate-ping"></div>
-      )}
     </div>
   );
 };
