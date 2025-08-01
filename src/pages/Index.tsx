@@ -5,7 +5,6 @@ import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import ProcessSection from "@/components/ProcessSection";
 import YouTubeWorksSection from "@/components/YouTubeWorksSection";
-import InstagramShowcase from "@/components/InstagramShowcase";
 import BlogShowcase from "@/components/BlogShowcase";
 import WebsiteCopyShowcase from "@/components/WebsiteCopyShowcase";
 import MagazineShowcase from "@/components/MagazineShowcase";
@@ -19,6 +18,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import SimpleFAQSection from "@/components/SimpleFAQSection";
 import SimpleToolsSection from "@/components/SimpleToolsSection";
+import EmailAnalyticsShowcase from "@/components/EmailAnalyticsShowcase";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 const Index = () => {
@@ -50,7 +50,7 @@ const Index = () => {
         variant="social"
       />
       <YouTubeWorksSection />
-      <InstagramShowcase />
+      <EmailAnalyticsShowcase />
       
       {/* Tools & Skills */}
       <SectionDivider 
