@@ -23,7 +23,7 @@ const ContactSection = () => {
     },
     {
       icon: FileText,
-      title: "Download My Portfolio",
+      title: "Download My Resume",
       description: "Get a detailed overview of my work and results",
       action: "Download PDF",
       href: "https://drive.google.com/file/d/171LCl7u9FH7nAO9ATTceCQYQ-01ywxOU/view?usp=sharing",
@@ -161,7 +161,12 @@ const ContactSection = () => {
             </div>
             
             <div className="text-center lg:text-right">
-              <Button variant="coral" size="xl" className="group">
+              <Button 
+                variant="coral" 
+                size="xl" 
+                className="group"
+                onClick={() => window.open('mailto:pallavi.tanya.dey@gmail.com', '_blank')}
+              >
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
