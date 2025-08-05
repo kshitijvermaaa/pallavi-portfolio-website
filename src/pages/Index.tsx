@@ -6,6 +6,7 @@ import ServicesSection from "@/components/ServicesSection";
 import ProcessSection from "@/components/ProcessSection";
 import YouTubeWorksSection from "@/components/YouTubeWorksSection";
 import BlogShowcase from "@/components/BlogShowcase";
+import WhitepaperShowcase from "@/components/WhitepaperShowcase";
 import WebsiteCopyShowcase from "@/components/WebsiteCopyShowcase";
 import MagazineShowcase from "@/components/MagazineShowcase";
 import StatsSection from "@/components/StatsSection";
@@ -42,6 +43,7 @@ const Index = () => {
       <WebsiteCopyShowcase />
       <MagazineShowcase />
       <BlogShowcase />
+      <WhitepaperShowcase />
       
       {/* Digital Content Management */}
       <SectionDivider 

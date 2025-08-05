@@ -32,9 +32,9 @@ const ContactSection = () => {
   ];
 
   const languages = [
-    { language: "English", proficiency: "Native" },
-    { language: "Hindi", proficiency: "Fluent" },
-    { language: "Bengali", proficiency: "Fluent" }
+    { language: "English", proficiency: "Fluent" },
+    { language: "Hindi", proficiency: "Native" },
+    { language: "Bengali", proficiency: "Native" }
   ];
 
   const getColorClasses = (color: string) => {
