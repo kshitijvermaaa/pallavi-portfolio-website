@@ -5,9 +5,9 @@ import { Mail, TrendingUp, Users, BarChart3, Calendar, Target, Zap } from 'lucid
 const EmailAnalyticsShowcase = () => {
   const campaigns = [
     {
-      id: 1,
+       id: 1,
       title: "25th April Newsletter",
-      date: "Apr 25, 2025", 
+      date: "Apr 25, 2025",
       subject: "Global Literacy Week Special: Smarter Reading with Docubaat",
       campaignNumber: "#64",
       delivered: 1498,
@@ -22,7 +22,7 @@ const EmailAnalyticsShowcase = () => {
       theme: "📚 Global Literacy Week"
     },
     {
-      id: 2,
+     id: 2,
       title: "30th May Newsletter",
       date: "May 30, 2025",
       subject: "Your Document Just Got a Brain. Meet Docubaat.",
@@ -39,8 +39,8 @@ const EmailAnalyticsShowcase = () => {
       theme: "🧠 AI Enhancement"
     },
     {
-      id: 3,
-      title: "4th July Newsletter", 
+     id: 3,
+      title: "4th July Newsletter",
       date: "Jul 04, 2025",
       subject: "Read less. Know more. Be free.",
       campaignNumber: "#72",
